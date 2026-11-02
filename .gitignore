@@ -1,0 +1,43 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Секреты и личные данные — в репозиторий не попадают
+config.toml
+.env
+.env.*
+*.session
+*.session-journal
+tdjson.log
+kuni.log
+*.log
+
+# Локальные данные: память, дневник, артефакты
+data/*
+!data/.gitkeep
+logs_proxy/
+
+# Временные и отладочные файлы
+_*.py
+_*.txt
+_*.err
+*.db
+*.db-shm
+*.db-wal
+*.pid
+*.lock
+*.token
+graphify-out/
+.backup*/
+*backup*
+
+# Бэкапы и ключи
+*.bak
+*.legacy
+api.txt
+*api*.txt
+keys.txt
